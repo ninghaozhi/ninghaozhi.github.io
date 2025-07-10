@@ -71,6 +71,44 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-人生感悟" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/07/08/%E4%BA%BA%E7%94%9F%E6%84%9F%E6%82%9F/" class="article-date">
+  <time class="dt-published" datetime="2025-07-08T13:54:35.000Z" itemprop="datePublished">2025-07-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2025/07/08/%E4%BA%BA%E7%94%9F%E6%84%9F%E6%82%9F/">人生感悟</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2025/07/08/%E4%BA%BA%E7%94%9F%E6%84%9F%E6%82%9F/" data-id="cmcxbzgbn0002isttcgd38akj" data-title="人生感悟" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-Python-Learning-Notes" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2025/07/08/Python-Learning-Notes/" class="article-date">
@@ -93,18 +131,169 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>这不是我第一次学习编程。在此之前我学习过c语言,前端，然后就是现在的py。我为什么要学这些东西？我一个非科班的大学生。应该是兴趣占很大一部分，然后是我有想实现的东西，为此我拿出时间来尝试，自学的问题是常找不到学习方向，也看不清自己究竟处在什么位置。但路就在那。</p>
+        <h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>这不是我第一次学习编程。在此之前我学习过 c 语言,前端，然后就是现在的 py。我为什么要学这些东西？我一个非科班的大学生。应该是兴趣占很大一部分，然后是我有想实现的东西，为此我拿出时间来尝试，自学的问题是常找不到学习方向，也看不清自己究竟处在什么位置。但路就在那。</p>
 <hr>
 <h2 id="编程规范"><a href="#编程规范" class="headerlink" title="编程规范"></a>编程规范</h2><h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><p>单行注释用#开头。多行注释用三个双引号包裹</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 这一行被注释了</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">这一大段内容都被注释了</span></span><br><span class="line"><span class="string">这一大段内容都被注释了</span></span><br><span class="line"><span class="string">这一大段内容都被注释了</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
-<h2 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h2><h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><p>input()函数受一个标准输入数据，执行之后会阻塞等待人从现实世界输入内容，回车之后再继续运行。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="built_in">input</span>(<span class="string">&quot;请输入一个内容：&quot;</span>)</span><br><span class="line">请输入一个内容: <span class="number">123</span>  <span class="comment"># 输入整数</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">type</span>(a)</span><br><span class="line">&lt;<span class="keyword">class</span> <span class="string">&#x27;str&#x27;</span>&gt;  <span class="comment"># 字符串</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h2><h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><p>input()函数受一个标准输入数据，执行之后会阻塞等待人从现实世界输入内容，回车之后再继续运行。这里输入的是一个字符串，根据需要进行类型转换。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="built_in">input</span>(<span class="string">&quot;请输入一个内容：&quot;</span>)</span><br><span class="line">请输入一个内容: <span class="number">123</span>  <span class="comment"># 输入整数</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">type</span>(a) <span class="comment"># 查看数据类型</span></span><br><span class="line">&lt;<span class="keyword">class</span> <span class="string">&#x27;str&#x27;</span>&gt;  <span class="comment"># 字符串</span></span><br></pre></td></tr></table></figure>
+
 <p><img src="/images/shuru.png"></p>
-<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><p>print() 方法用于打印输出。可以打印多个对象，打印多个对象时用分割符连接。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(*objects, sep=<span class="string">&#x27; &#x27;</span>, end=<span class="string">&#x27;\n&#x27;</span>, file=sys.stdout)</span><br><span class="line"><span class="comment"># sep=&#x27; &#x27;用来间隔多个对象，默认值是一个空格。是在这一个print里间隔。多个对象用&#x27;,&#x27;隔开，这个不会打印出来的，会显示一个空格</span></span><br><span class="line"><span class="comment"># end -- 用来设定以什么结尾。默认值是换行符 \n，我们可以换成其他字符串。</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;&quot;</span>,end=<span class="string">&quot; &quot;</span>，sep=<span class="string">&quot;&quot;</span>) <span class="comment"># 效果是打印一个空格，并且多次输出不会换行。原理是打印一个空字符串，把默认的&#x27;\n&#x27;变成空格,然后因为只有一个对象，所以sep=&quot;&quot;没有作用。</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot; &quot;</span>,end=<span class="string">&quot;&quot;</span>，sep=<span class="string">&quot;&quot;</span>) <span class="comment"># 效果跟上面一样。原理打印一个空格，把&#x27;\n&#x27;替换掉，用空（啥都没有）替换的。</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><p>程序就是用来处理数据的，而变量就是用来存储数据的</p>
+<ul>
+<li>在 Python 中，每个变量在使用前都必须赋值，变量赋值以后该变量才会被创建</li>
+<li>等号（&#x3D;）用来给变量赋值<ul>
+<li>&#x3D; 左边是一个变量名</li>
+<li>&#x3D; 右边是存储在变量中的值</li>
+</ul>
+</li>
+<li>变量名第一次出现是定义变量</li>
+<li>变量名再次出现，不是定义变量，而是直接使用之前定义过的变量</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">变量名 = 值</span><br></pre></td></tr></table></figure>
+
+<h2 id="数值类型"><a href="#数值类型" class="headerlink" title="数值类型"></a>数值类型</h2><h3 id="int（整形）"><a href="#int（整形）" class="headerlink" title="int（整形）"></a>int（整形）</h3><p>整形，也被称之为整数，整数就是数学中的数字。整形在 Python 中不受长度限制大小范围，可以定义任意大的数字（有些语言不行）<br>使用 type 函数可以查看一个变量的类型</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">1</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">type</span>(<span class="number">1</span>)</span><br><span class="line">&lt;<span class="keyword">class</span> <span class="string">&#x27;int&#x27;</span>&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="float（浮点型）"><a href="#float（浮点型）" class="headerlink" title="float（浮点型）"></a>float（浮点型）</h3><p>浮点型也就是小数，与数学中的小数保持一致。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">1.0</span></span><br><span class="line"><span class="number">1.0</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">type</span>(<span class="number">1.0</span>)</span><br><span class="line">&lt;<span class="keyword">class</span> <span class="string">&#x27;float&#x27;</span>&gt;</span><br></pre></td></tr></table></figure>
+
+<p>运算、运算符优先级与整形是一样。</p>
+<h3 id="类型转化"><a href="#类型转化" class="headerlink" title="类型转化"></a>类型转化</h3><p>浮点数转化为整形（显示转化）</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">int</span>(<span class="number">1.0</span>)</span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">float</span>(<span class="number">1</span>)</span><br><span class="line"><span class="number">1.0</span></span><br></pre></td></tr></table></figure>
+
+<p>隐式转化，系统背后默认进行转换。</p>
+<ul>
+<li>在 Python 中，除法运算符 &#x2F; 总是返回浮点数（float）</li>
+<li>即使操作数是整数，结果也会被隐式转换为浮点数</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">1</span> / <span class="number">2</span></span><br><span class="line"><span class="number">0.5</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">type</span>(<span class="number">2</span> / <span class="number">1</span>)</span><br><span class="line">&lt;<span class="keyword">class</span> <span class="string">&#x27;float&#x27;</span>&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>1. 数值运算中的自动提升</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 整数 → 浮点数</span></span><br><span class="line">result = <span class="number">3</span> + <span class="number">4.5</span>  <span class="comment"># int 3 自动转为 float 3.0</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 整数/浮点数 → 复数</span></span><br><span class="line">result = <span class="number">2</span> + <span class="number">3j</span>  <span class="comment"># int 2 自动转为 complex(2,0)</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>2. 布尔上下文中的转换</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 非布尔值 → 布尔值</span></span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;hello&quot;</span>:   <span class="comment"># 字符串 → True</span></span><br><span class="line"><span class="keyword">if</span> <span class="number">0</span>:         <span class="comment"># 整数0 → False</span></span><br><span class="line"><span class="keyword">if</span> []:        <span class="comment"># 空列表 → False</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>3. 比较运算中的转换</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 跨类型比较</span></span><br><span class="line"><span class="built_in">print</span>(<span class="number">10</span> == <span class="number">10.0</span>)  <span class="comment"># True，整数转浮点数比较</span></span><br><span class="line"><span class="built_in">print</span>(<span class="literal">True</span> == <span class="number">1</span>)   <span class="comment"># True，布尔转整数</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>4. 字符串格式化中的转换</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 自动转为字符串</span></span><br><span class="line">message = <span class="string">f&quot;Value: <span class="subst">&#123;<span class="number">42</span>&#125;</span>&quot;</span>  <span class="comment"># int 42 → str &quot;42&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="算数运算符"><a href="#算数运算符" class="headerlink" title="算数运算符"></a>算数运算符</h2><p>因为是整数，所以也可以进行数学中的基本运算。使用算术运算符号，用来处理四则运算。计算优先级跟数学一样，指数&gt;乘除&gt;加减，同级运算从左到右。()可以调整优先级</p>
+<table>
+<thead>
+<tr>
+<th align="center">运算符</th>
+<th>描述</th>
+<th>实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">+</td>
+<td>加</td>
+<td>10 + 20 &#x3D; 30</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td>减</td>
+<td>10 - 20 &#x3D; 10</td>
+</tr>
+<tr>
+<td align="center">_</td>
+<td>乘</td>
+<td>10 _ 20 &#x3D; 200</td>
+</tr>
+<tr>
+<td align="center">&#x2F;</td>
+<td>除</td>
+<td>10 &#x2F; 20 &#x3D; 0.5</td>
+</tr>
+<tr>
+<td align="center">&#x2F;&#x2F;</td>
+<td>取整除</td>
+<td>返回除法的整数部分（商）9 &#x2F;&#x2F; 2 输出结果 4</td>
+</tr>
+<tr>
+<td align="center">%</td>
+<td>取余数</td>
+<td>返回除法的余数 9 % 2 &#x3D; 1</td>
+</tr>
+<tr>
+<td align="center">**</td>
+<td>幂</td>
+<td>又称次方、乘方，2 ** 3 &#x3D; 8</td>
+</tr>
+</tbody></table>
+<p>除此之外，+ 还可以作为字符串（包括后续要介绍的序列）的连接运算符。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>s1 = <span class="string">&#x27;Hello &#x27;</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>s2 = <span class="string">&#x27;正心&#x27;</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="comment"># 使用 + 连接两个字符串</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">print</span>(s1 + s2)</span><br><span class="line">Hello 正心</span><br></pre></td></tr></table></figure>
+
+<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><p>字符串是 Python 中最常用的数据类型。我们可以使用单引号（’）或双引号（”）来创建字符串。单双引号总体来说没有任何区别，只在单引号当普通字符时容易区分：如 var &#x3D; “let’s go”</p>
+<h3 id="format"><a href="#format" class="headerlink" title="format"></a>format</h3><p>基本语法是使用 {} 和 .format()。format 函数可以接受不限各参数，位置可以不按照顺序</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="string">&#x27;张三&#x27;</span></span><br><span class="line">age = <span class="number">18</span></span><br><span class="line">nickname = <span class="string">&#x27;法外狂徒&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># format 用 &#123;&#125; 占位</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;姓名：&#123;name&#125;，年龄&#123;age&#125;，外号：&#123;nickname&#125; &#x27;</span>.<span class="built_in">format</span>(nickname = <span class="string">&#x27;法外狂徒&#x27;</span>, age = <span class="number">18</span>,nickname = <span class="string">&#x27;法外狂徒&#x27;</span> ))<span class="comment"># 关键字参数命名</span></span><br><span class="line"><span class="comment"># 输出：姓名：张三，年龄18，外号：法外狂徒</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;hello &#123;1&#125; 你今年已经&#123;0&#125;岁了&#x27;</span>.<span class="built_in">format</span>(age，name))<span class="comment"># 位置参数索引</span></span><br><span class="line"><span class="comment"># 输出：hello 张三 你今年已经18岁了</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;姓名：&#123;&#125;，年龄&#123;&#125;，外号：&#123;&#125; &#x27;</span>.<span class="built_in">format</span>(name, age, nickname))</span><br><span class="line"><span class="comment"># 输出：姓名：张三，年龄18，外号：法外狂徒</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="f"><a href="#f" class="headerlink" title="f"></a>f</h3><p>f’{}’形式，并不是真正的字符串常量，而是一个运算求值表达式，可以很方便的用于字符串拼接、路径拼接等</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="string">&#x27;张三&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># f 在字符串中嵌入变量</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&#x27;hello <span class="subst">&#123;name&#125;</span> !&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="s"><a href="#s" class="headerlink" title="%s"></a>%s</h3><p>% 被称为格式化操作符，专门用于处理字符串中的格式</p>
+<ul>
+<li>包含 % 的字符串，被称为格式化字符串</li>
+<li>% 和不同的字符连用，不同类型的数据需要使用不同的格式化字符</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">格式化字符</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">%s</td>
+<td>字符串</td>
+</tr>
+<tr>
+<td align="center">%d</td>
+<td>有符号十进制整数，%06d 表示输出的整数显示位数，不足的地方使用 0 补全</td>
+</tr>
+<tr>
+<td align="center">%f</td>
+<td>浮点数，%.2f 表示小数点后只显示两位</td>
+</tr>
+<tr>
+<td align="center">%%</td>
+<td>输出 %</td>
+</tr>
+<tr>
+<td align="center">%c</td>
+<td>%ASCII 字符</td>
+</tr>
+<tr>
+<td align="center">%o</td>
+<td>%8 进制</td>
+</tr>
+<tr>
+<td align="center">%x</td>
+<td>%16 进制</td>
+</tr>
+<tr>
+<td align="center">%e</td>
+<td>%科学计数法</td>
+</tr>
+</tbody></table>
+<p>格式如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;格式化字符串 %s&quot;</span> % <span class="string">&#x27;变量 1&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;格式化字符串&quot;</span> % (<span class="string">&#x27;变量 1&#x27;</span>, <span class="string">&#x27;变量 2&#x27;</span>, ...))</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="string">&#x27;张三&#x27;</span></span><br><span class="line">age = <span class="number">18</span></span><br><span class="line">nickname = <span class="string">&#x27;法外狂徒&#x27;</span></span><br><span class="line"></span><br><span class="line">name2 = <span class="string">&#x27;李四&#x27;</span></span><br><span class="line">age2 = <span class="number">19</span></span><br><span class="line">nickname2 = <span class="string">&#x27;帮凶&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># %s 用 %s 占位</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;姓名：%s&#x27;</span> % name)</span><br><span class="line"><span class="comment"># 多个参数</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;%s，%s 哦嗨呦&#x27;</span> % (name, name2))</span><br></pre></td></tr></table></figure>
+<h2 id="查找和替换"><a href="#查找和替换" class="headerlink" title="查找和替换"></a>查找和替换</h2>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/07/08/Python-Learning-Notes/" data-id="cmcul2aj30000nwtt1wv17phj" data-title="python学习笔记" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/07/08/Python-Learning-Notes/" data-id="cmcxbzgbm0001istt24fz1zov" data-title="python学习笔记" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -155,7 +344,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/07/03/hello-world/" data-id="cmcul2aj60001nwtt9t1pd4oi" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/07/03/hello-world/" data-id="cmcxbzgbj0000istte97n1ubd" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -196,6 +385,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2025/07/08/%E4%BA%BA%E7%94%9F%E6%84%9F%E6%82%9F/">人生感悟</a>
+          </li>
         
           <li>
             <a href="/2025/07/08/Python-Learning-Notes/">python学习笔记</a>
