@@ -86,7 +86,7 @@
         <h2 id="oop-面向对象"><a href="#oop-面向对象" class="headerlink" title="oop(面向对象)"></a>oop(面向对象)</h2><p>引言<br>材料出处:deepseek</p>
 <p>面向对象有两方面内容，类跟对象。<br>类像是汽车的设计蓝图。它定义了汽车该有哪些部件（属性）和功能（方法），但这个只是纸面上的东西。、<br>对象是根据类创建出来的具体实例。比如说根据蓝图制造出一辆汽车，这就是一个对象。<br>面向对象里还有四大支柱：封装、继承、多态、抽象</p>
 <ol>
-<li>封装 <a href="%EF%BC%88%E6%AF%94%E5%A6%82%E8%AF%B4%E6%88%91%E5%86%99%E4%BA%86%E4%B8%80%E4%B8%AA%E6%89%BE%E5%87%BA%E9%97%B0%E5%B9%B4%E5%B9%B4%E4%BB%BD%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%8C%E5%90%8E%E7%BB%AD%E6%88%91%E5%8F%91%E7%8E%B0%E6%88%91%E5%86%99%E5%BE%97%E4%B8%8D%E4%B8%A5%E8%B0%A8%EF%BC%8C%E9%9C%80%E8%A6%81%E5%AE%8C%E5%96%84%E6%9D%A1%E4%BB%B6%EF%BC%8C%E5%AE%8C%E5%96%84%E4%BA%86%E4%B9%8B%E5%90%8E%EF%BC%8C%E5%AE%83%E8%B0%83%E7%94%A8%E6%96%B9%E6%B3%95%E8%BF%98%E6%98%AF%E5%8E%9F%E6%9D%A5%E9%82%A3%E6%A0%B7%EF%BC%8C%E5%86%85%E9%83%A8%E7%9A%84%E4%BF%AE%E6%94%B9%E4%B8%8D%E5%BD%B1%E5%93%8D%E5%A4%96%E9%83%A8%E7%9A%84%E8%B0%83%E7%94%A8%EF%BC%89">^1</a><br>封装就像是汽车的车壳，把内部零件包裹起来，只留下一些接口（如方向盘、油门）给司机使用（接口不能理解成电路接口管道接口这种，我认为更多的是开关，手机屏幕也算是接<br>口，它跟充电处的作用是差不多的）</li>
+<li>封装 <sup>[1]</sup><br>封装就像是汽车的车壳，把内部零件包裹起来，只留下一些接口（如方向盘、油门）给司机使用（接口不能理解成电路接口管道接口这种，我认为更多的是开关，手机屏幕也算是接<br>口，它跟充电处的作用是差不多的）</li>
 </ol>
 <p>在编程中，封转意味着：</p>
 <ul>
@@ -95,15 +95,15 @@
 </ul>
 <p>好处：安全，使用简单，内部修改不影响外部使用。</p>
 <ol start="2">
-<li>继承 <a href="%EF%BC%88%E6%8D%A2%E6%88%90%E6%88%91%E4%B8%93%E4%B8%9A%E7%9F%A5%E8%AF%86%E5%B0%B1%E6%98%AF%EF%BC%8C%E6%95%99%E8%82%B2%E5%85%B7%E6%9C%89%E7%BB%A7%E6%89%BF%E6%80%A7%E7%9A%84%EF%BC%8C%E6%95%99%E8%82%B2%E7%9A%84%E6%9B%B4%E6%96%B0%E8%BF%AD%E4%BB%A3%E4%B8%8D%E6%98%AF%E5%9C%A8%E9%87%8D%E6%96%B0%E4%BB%8E%E6%97%A0%E5%88%B0%E6%9C%89%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E6%9B%B4%E5%A5%BD%E7%9A%84%EF%BC%8C%E8%80%8C%E6%98%AF%E5%9C%A8%E5%8E%9F%E6%9C%89%E7%9A%84%E5%9F%BA%E7%A1%80%E4%B8%8A%E5%BB%BA%E5%BE%97%E6%9B%B4%E9%AB%98%E6%9B%B4%E5%A5%BD%EF%BC%8C%E5%8F%91%E5%B1%95%E7%9A%84%E5%90%8C%E6%97%B6%E4%BC%9A%E8%B7%9F%E6%9C%80%E5%88%9D%E6%9C%89%E4%B8%80%E5%AE%9A%E7%9A%84%E7%9B%B8%E4%BC%BC%E5%A4%84%EF%BC%8C%E4%BD%86%E6%9B%B4%E5%A4%9A%E6%98%AF%E9%9A%8F%E7%9D%80%E6%97%B6%E4%BB%A3%E8%80%8C%E8%B0%83%E6%95%B4%EF%BC%89">^2</a><br>继承就像汽车的分类，我们有一个通用的汽车蓝图（父类），然后我们可以创建更具体的蓝图，比如电动车蓝图（子类），它继承了汽车的所有特性，并且可以增加或修改一些特性（比如增加电池容量，修改发动机为电动机）。</li>
+<li>继承 <sup>[2]</sup><br>继承就像汽车的分类，我们有一个通用的汽车蓝图（父类），然后我们可以创建更具体的蓝图，比如电动车蓝图（子类），它继承了汽车的所有特性，并且可以增加或修改一些特性（比如增加电池容量，修改发动机为电动机）。</li>
 </ol>
 <p>好处：代码复用，扩展方便。</p>
 <ol start="3">
-<li>多态 [^3] - 同一个方法，不同的行为<br>多态的意思是“多种形态”。它允许不同的对象对同一消息（方法调用）做出不同的响应。</li>
+<li>多态 <sup>[3]</sup> - 同一个方法，不同的行为<br>多态的意思是“多种形态”。它允许不同的对象对同一消息（方法调用）做出不同的响应。</li>
 </ol>
 <p>好处：接口统一，使用方便，增加新的子类不影响现有代码。</p>
 <ol start="4">
-<li>抽象 <a href="%EF%BC%88%E7%88%B6%E7%B1%BB%E5%8F%AA%E9%9C%80%E8%A6%81%E7%A1%AE%E5%AE%9A%E8%87%AA%E5%B7%B1%E5%93%AA%E4%BA%9B%E8%A6%81%E6%B1%82%E5%B0%B1%E5%A5%BD%E4%BA%86%EF%BC%8C%E5%AD%90%E7%B1%BB%E8%80%83%E8%99%91%E5%BE%97%E5%B0%B1%E5%A4%9A%E4%BA%86%EF%BC%89(%E4%B9%8B%E5%89%8D%E5%86%99%E9%A3%9E%E6%9C%BA%E5%A4%A7%E6%88%98%E6%97%B6%EF%BC%8C%E6%89%80%E6%9C%89%E7%9A%84%E5%8A%9F%E8%83%BD%E9%83%BD%E8%A2%AB%E5%88%86%E5%88%B0%E7%8B%AC%E7%AB%8B%E7%9A%84%E6%A8%A1%E5%9D%97%E4%B8%AD%EF%BC%8C%E4%B8%BB%E8%A6%81%E6%96%87%E4%BB%B6%E9%87%8C%E5%8F%AA%E6%98%AF%E6%AF%8F%E4%B8%AA%E6%A8%A1%E5%9D%97%E7%9A%84%E5%AF%BC%E5%85%A5)">^4</a>（Abstraction） - 隐藏复杂性，只展示关键信息<br>抽象就像我们使用汽车时，不需要知道发动机是如何工作的，只需要知道油门、刹车和方向盘的使用即可。抽象类或接口定义了一组方法（没有具体实现），然后由子类去实现具体细节。</li>
+<li>抽象<sup>[4]</sup>（Abstraction） - 隐藏复杂性，只展示关键信息<br>抽象就像我们使用汽车时，不需要知道发动机是如何工作的，只需要知道油门、刹车和方向盘的使用即可。抽象类或接口定义了一组方法（没有具体实现），然后由子类去实现具体细节。</li>
 </ol>
 <p>好处：降低复杂度，强制子类实现必要的方法，提高代码的可维护性。</p>
 <p>🌍 现实世界类比</p>
@@ -156,8 +156,8 @@
 <td>使用电视不需要知道内部电路原理</td>
 </tr>
 </tbody></table>
-<p>为什么使用oop？在思考这个问题前我觉得要思考使用oop会怎么样，从需求和效果去看。<br>使用oop可以让项目功能成为一个个模块，类似于乐高积木，可以拼装拆卸，具有一定的独立性又可以进行组合调整，多个人去协作也可以轻松的分工，对于一个抽象的东西，也能在现实中找到依据。</p>
-<p>一句话理解oop：<br>面向对象编程就是把现实世界的事物及其关系，用”对象”和”类”的形式在计算机中建模，通过封装、继承、多态和抽象四大原则来组织代码。</p>
+<p>为什么使用 oop？在思考这个问题前我觉得要思考使用 oop 会怎么样，从需求和效果去看。<br>使用 oop 可以让项目功能成为一个个模块，类似于乐高积木，可以拼装拆卸，具有一定的独立性又可以进行组合调整，多个人去协作也可以轻松的分工，对于一个抽象的东西，也能在现实中找到依据。</p>
+<p>一句话理解 oop：<br>面向对象编程就是把现实世界的事物及其关系，用”对象”和”类”的形式在计算机中建模，通过封装、继承、多态和抽象四大原则来组织代码。</p>
 <p>就像用乐高积木搭建世界：</p>
 <ul>
 <li>类是你的积木设计图</li>
@@ -167,16 +167,17 @@
 <li>多态是不同积木的相同接口（如都能连接）</li>
 <li>抽象是只看积木外观，不管内部结构</li>
 </ul>
-<p>[^3]:（具体点就是，一个父类被多个子类继承了，并且这多个子类都对其中的一个方法进行了修改，那么在子类具体调用方法时，彼此不受影响，各自按照自己所修改后的方法执行。A&lt;B A,B&lt;D 像这种继承的也跟上面一样）</p>
-<p>这是正文内容<sup>[1]</sup>，这里引用了另一个注释<sup>[2]</sup>。</p>
-<div style="font-size: 0.8em;">
-<b>[1]</b>: 第一个注释内容<br>
-<b>[2]</b>: 第二个注释内容
+<div style="font-size: 0..  8em;">
+<b>[1]</b>: 比如说我写了一个找出闰年年份的方法，后续我发现我写得不严谨，需要完善条件，完善了之后，它调用方法还是原来那样，内部的修改不影响外部的调用<br>
+<b>[2]</b>: 换成我专业知识就是，教育具有继承性的，教育的更新迭代不是在重新从无到有创建一个更好的，而是在原有的基础上建得更高更好，发展的同时会跟最初有一定的相似处，但更多是随着时代而调整<br>
+<b>[3]</b>: 具体点就是，一个父类被多个子类继承了，并且这多个子类都对其中的一个方法进行了修改，那么在子类具体调用方法时，彼此不受影响，各自按照自己所修改后的方法执行。（a继承b，a跟b又一起继承了c） 像这种继承的也跟上面一样 <br>
+<b>[4]</b>:父类只需要确定自己哪些要求就好了，子类考虑得就多了）之前写飞机大战时，所有的功能都被分到独立的模块中，主要文件里只是每个模块的导入
 </div>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/08/04/oop%E5%AD%A6%E4%B9%A0%E8%B7%9F%E7%90%86%E8%A7%A3/" data-id="cmdwjkzyk0001w8ttcz8sbena" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/08/04/oop%E5%AD%A6%E4%B9%A0%E8%B7%9F%E7%90%86%E8%A7%A3/" data-id="cmdwlkbhf0001qgtt6i0x1dzn" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -1098,7 +1099,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/07/08/Python-Learning-Notes/" data-id="cmdwjkzyl0002w8tt2bqy6k6u" data-title="python学习笔记" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/07/08/Python-Learning-Notes/" data-id="cmdwlkbhg0002qgtt0is13fyc" data-title="python学习笔记" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -1149,7 +1150,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/07/03/hello-world/" data-id="cmdwjkzyh0000w8tt8f82cz7p" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/07/03/hello-world/" data-id="cmdwlkbhc0000qgtt8qrz7a82" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
