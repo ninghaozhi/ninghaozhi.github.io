@@ -71,6 +71,38 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-员工管理系统的类" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/08/17/%E5%91%98%E5%B7%A5%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%B1%BB/" class="article-date">
+  <time class="dt-published" datetime="2025-08-17T05:24:53.640Z" itemprop="datePublished">2025-08-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <hr>
+<h2 id="title-员工管理系统的类"><a href="#title-员工管理系统的类" class="headerlink" title="title:员工管理系统的类"></a>title:员工管理系统的类</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">EmployeeManagementSystem</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="variable language_">self</span>.employees = &#123;&#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">add_employee</span>(<span class="params">self, <span class="built_in">id</span>, name, position</span>):</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">id</span> <span class="keyword">in</span> <span class="variable language_">self</span>.employees:</span><br><span class="line">            <span class="keyword">return</span> <span class="string">&quot;Employee ID already exists.&quot;</span></span><br><span class="line">        <span class="variable language_">self</span>.employees[<span class="built_in">id</span>] = &#123;<span class="string">&#x27;name&#x27;</span>: name, <span class="string">&#x27;position&#x27;</span>: position&#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;Employee added successfully.&quot;</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">remove_employee</span>(<span class="params">self, <span class="built_in">id</span></span>):</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">id</span> <span class="keyword">not</span> <span class="keyword">in</span> <span class="variable language_">self</span>.employees:</span><br><span class="line">            <span class="keyword">return</span> <span class="string">&quot;Employee ID does not exist.&quot;</span></span><br><span class="line">        <span class="keyword">del</span> <span class="variable language_">self</span>.employees[<span class="built_in">id</span>]</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;Employee removed successfully.&quot;</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">update_employee</span>(<span class="params">self, <span class="built_in">id</span>, name=<span class="literal">None</span>, position=<span class="literal">None</span></span>):</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">id</span> <span class="keyword">not</span> <span class="keyword">in</span> <span class="variable language_">self</span>.employees:</span><br><span class="line">            <span class="keyword">return</span> <span class="string">&quot;Employee ID does not exist.&quot;</span></span><br><span class="line">        <span class="keyword">if</span> name:</span><br><span class="line">            <span class="variable language_">self</span>.employees[<span class="built_in">id</span>][<span class="string">&#x27;name&#x27;</span>] = name</span><br><span class="line">        <span class="keyword">if</span> position:</span><br><span class="line">            <span class="variable language_">self</span>.employees[<span class="built_in">id</span>][<span class="string">&#x27;position&#x27;</span>] = position</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;Employee updated successfully.&quot;</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">list_employees</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> <span class="variable language_">self</span>.employees:</span><br><span class="line">            <span class="keyword">return</span> <span class="string">&quot;No employees found.&quot;</span></span><br><span class="line">        <span class="keyword">for</span> <span class="built_in">id</span>, info <span class="keyword">in</span> <span class="variable language_">self</span>.employees.items():</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">f&quot;ID: <span class="subst">&#123;<span class="built_in">id</span>&#125;</span>, Name: <span class="subst">&#123;info[<span class="string">&#x27;name&#x27;</span>]&#125;</span>, Position: <span class="subst">&#123;info[<span class="string">&#x27;position&#x27;</span>]&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Example usage</span></span><br><span class="line">ems = EmployeeManagementSystem()</span><br><span class="line">ems.add_employee(<span class="number">1</span>, <span class="string">&#x27;John Doe&#x27;</span>, <span class="string">&#x27;Developer&#x27;</span>)</span><br><span class="line">ems.add_employee(<span class="number">2</span>, <span class="string">&#x27;Jane Smith&#x27;</span>, <span class="string">&#x27;Manager&#x27;</span>)</span><br><span class="line">ems.list_employees()</span><br><span class="line">ems.update_employee(<span class="number">1</span>, name=<span class="string">&#x27;Johnathan Doe&#x27;</span>)</span><br><span class="line">ems.list_employees()</span><br><span class="line">ems.remove_employee(<span class="number">2</span>)</span><br><span class="line">ems.list_employees()</span><br></pre></td></tr></table></figure>
+
+<p>结合我上一篇的学生管理系统，我分享一下我对面向对象的理解，同样是一个系统，我这的两个系统都是在计算器中的，但现实中也有用人来组成的，学生管理系统就像是根据所需要的功能，我把这个功能实现了，然后能正常调用，能使用就行了，其背后的原理，就跟闹钟一样，你使用的时候会看指针就行了，背后是怎个原理，你不必在乎。而面向对象就像是把现实搬进来了，添加员工那就需要有登记的部门，删除有删除的，每一个现实的功能，在程序中都有对应，将现实实例化。非常得直观，为什么闹钟的指针会转呢，因为有人在闹钟里掐着表去实时调整（狗头）。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2025/08/17/%E5%91%98%E5%B7%A5%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%B1%BB/" data-id="cmef9sk000002dsttgchchp81" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-豪言壮语" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2025/08/14/%E8%B1%AA%E8%A8%80%E5%A3%AE%E8%AF%AD/" class="article-date">
@@ -94,11 +126,19 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>我要干什么？我要节制天下程序教程！</p>
+<p style="padding-left: 15em;text-indent: -1em;"> 
+     ——2025.08.14
+ </p>
+
+<p>刚才研究了一下，怎么稳定敲空格的，我想在没段话后面加个日期，整明白后，突然忘记我当时要记什么来着，算了，开启下一个番茄钟学习吧。</p>
+<p style="padding-left: 25em;text-indent: -1em;"> 
+     ——2025.08.17
+ </p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/08/14/%E8%B1%AA%E8%A8%80%E5%A3%AE%E8%AF%AD/" data-id="cmea8y1si0004v4tt5zq24g06" data-title="豪言壮语" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/08/14/%E8%B1%AA%E8%A8%80%E5%A3%AE%E8%AF%AD/" data-id="cmef9sk010004dsttc1dfgsq6" data-title="豪言壮语" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -138,7 +178,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/08/12/%E5%AD%A6%E7%94%9F%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" data-id="cmea8y1si0003v4tt5jzcc29s" data-title="学生管理系统" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/08/12/%E5%AD%A6%E7%94%9F%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" data-id="cmef9sjzy0001dstt6ncb2t2t" data-title="学生管理系统" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -167,7 +207,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/08/06/%E5%9C%A8%E5%9B%B0%E5%A2%83%E4%B8%AD%E7%9A%84%E5%8F%8D%E6%80%9D/" data-id="cmea8y1sj0005v4ttd3515ldp" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/08/06/%E5%9C%A8%E5%9B%B0%E5%A2%83%E4%B8%AD%E7%9A%84%E5%8F%8D%E6%80%9D/" data-id="cmef9sk000003dstt5ore8ud4" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -285,7 +325,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/08/04/oop%E5%AD%A6%E4%B9%A0%E8%B7%9F%E7%90%86%E8%A7%A3/" data-id="cmea8y1sh0002v4tt3obn5h12" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/08/04/oop%E5%AD%A6%E4%B9%A0%E8%B7%9F%E7%90%86%E8%A7%A3/" data-id="cmef9sk380006dsttacvaagqn" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -1207,7 +1247,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/07/08/Python-Learning-Notes/" data-id="cmea8y1sg0001v4tt54i3ca7x" data-title="python学习笔记" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/07/08/Python-Learning-Notes/" data-id="cmef9sk370005dsttfeeec49u" data-title="python学习笔记" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -1258,7 +1298,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/07/03/hello-world/" data-id="cmea8y1s50000v4tta06dgigk" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/07/03/hello-world/" data-id="cmef9sjzr0000dsttbt6x7avy" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -1301,6 +1341,10 @@
       <ul>
         
           <li>
+            <a href="/2025/08/17/%E5%91%98%E5%B7%A5%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%B1%BB/">(no title)</a>
+          </li>
+        
+          <li>
             <a href="/2025/08/14/%E8%B1%AA%E8%A8%80%E5%A3%AE%E8%AF%AD/">豪言壮语</a>
           </li>
         
@@ -1314,10 +1358,6 @@
         
           <li>
             <a href="/2025/08/04/oop%E5%AD%A6%E4%B9%A0%E8%B7%9F%E7%90%86%E8%A7%A3/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2025/07/08/Python-Learning-Notes/">python学习笔记</a>
           </li>
         
       </ul>
